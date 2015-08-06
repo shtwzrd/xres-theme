@@ -1,5 +1,4 @@
-xres-theme
-##########
+#xres-theme
 
 A theme that queries xrdb in order to dynamically create an Emacs theme.
 This works for both GUI and terminal Emacs, preserving translucent bg-color,

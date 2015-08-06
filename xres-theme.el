@@ -1,8 +1,5 @@
 ;;; xres-theme.el ---  Dynamic color theme, loaded from your Xresources
 
-;; Copyright (C) 2015 , warreq
-
-;; Author: warreq
 ;; URL: <https://github.com/warreq/xres-theme>
 ;;
 ;; Version: 0.1
@@ -63,11 +60,9 @@
      (split-string (substring
                    (shell-command-to-string query) 0 -1))))))
 
-(xres-color "background")
-
 (defun create-xres-theme (variant theme-name)
   (let ((class '((class color) (min-colors 16)))
-        (base            (xres-color "foreground")        )
+        (base            (xres-color "foreground")   )
         (cursor          (xres-color "brightwhite")  )
         (bg1             (xres-color "background")   )
         (bg2             (xres-color "brightblack")  )
